@@ -1,0 +1,71 @@
+.button {
+    font-family: var(--font-accent);
+    font-weight: 400;
+    font-size: 14px;
+    background-color: var(--card-background-color);
+}
+
+.theme-menu__button {
+    text-transform: uppercase;
+    position: relative;
+    outline: none;
+    border: none;
+}
+
+.theme-menu__button:hover {
+    filter: opacity(60%);
+    cursor: pointer;
+}
+
+.theme-menu__button:active {
+    filter: opacity(60%);
+}
+
+.theme-menu__button:disabled:hover{
+    filter: none;
+    cursor: default;
+}
+
+.theme-menu__button:disabled::before {
+    content: "▶"; 
+    position: absolute;
+    inset-inline-start: -1em;
+    font-family: var(--font-accent);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.card__buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.card__icon-button {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+.like-icon {
+    inline-size: 39px;
+    block-size: 36px;
+}
+
+.card__like-button {
+    background-color: transparent;
+    padding: 9px 31px;
+}
+
+.footer__button {
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 15px 19px;
+}
+
+.floppy {
+    block-size: 21px;
+    inline-size: 21px;
+    fill: currentColor;
+}

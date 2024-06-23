@@ -17,4 +17,91 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  background-image: var(--bg-image);
+  background-repeat: repeat;
+  background-color: var(--bg-color);
+  background-position: center;
+  background-attachment: fixed;
+  font-family: var(--font-regular), sans-serif;  
+  font-variation-settings: 'wght' var(--font-weight-normal);
+  color: var(--font-color);
+  inset-inline: auto;
+}
+
+.block {
+  inline-size: clamp(375px, 100%, 700px);
+  margin-inline: auto;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  block-size: clamp(327px, 100vh, 368px);
+  margin-block: 100px;
+  padding-block-end: 25px;
+  background-color: var(--card-background-color);
+}
+
+.header__title {
+  text-transform: uppercase;
+  font-family: var(--font-accent);
+  font-weight: 400;
+  font-size: clamp(49px, 1.9087rem + 4.9231vw, 65px);
+  margin-block-end: 20px;
+}
+
+.header__subtitle {
+  text-transform: uppercase;
+  font-family: var(--font-accent);
+  font-weight: 400;
+  font-size: 23px;
+  margin-block-end: 25px;
+}
+
+.theme-menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.card__item {
+  background-color: var(--card-background-color);
+  font-size: 18px;
+  box-sizing: border-box;
+  border: 2px solid var(--card-border-color);
+}
+
+.card__title {
+  font-size: 18px;
+  font-weight: var(--font-weight-bold);
+  padding: 3px 24px 3px 10px;
+}
+
+.card__image {
+  object-fit: cover;
+  inline-size: 100%;
+  block-size: 100%;
+}
+
+.card__bottom-zone {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  gap: 25px;
+}
+
+.card-description {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+
+.card__buttons {
+  align-self: end;
+}
+
+.footer {
+  padding-block: 50px;
 }

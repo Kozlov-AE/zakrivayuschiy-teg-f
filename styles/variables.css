@@ -1,4 +1,14 @@
 :root {
-    --font-width-normal: 400;
-    --font-width-bold: 700;
+    --bg-image:
+            repeating-linear-gradient(#d3d3d3 0, #d3d3d3 2px, transparent  2px, transparent  4px),
+            repeating-linear-gradient(90deg, #d3d3d3 0, #d3d3d3 2px, transparent  2px, transparent  4px),
+            linear-gradient(#e7e7e7, #e7e7e7 0.01%, #1a1a1a);
+    --bg-color: #b7b7b7;
+    --font-regular: 'Inter';
+    --font-accent: 'PressStart2P';
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+    --font-color: #000000;
+    --card-background-color: #ffffff;
+    --card-border-color: #000000;
 }
