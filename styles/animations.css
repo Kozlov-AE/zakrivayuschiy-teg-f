@@ -12,3 +12,42 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+
+@keyframes theme-menu__button-focusVisible {
+    from {
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1);   
+    }
+}
+
+@keyframes theme-menu__button-arrow {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-4px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes theme-menu__button-focusVisible {
+    from {
+        box-shadow: 0 0 0
+    }
+    to {
+        
+    }
+}
+
+@keyframes button-background {
+    from {
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1);
+    }
+}
