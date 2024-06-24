@@ -79,6 +79,35 @@
   padding: 3px 24px 3px 10px;
 }
 
+.card__image-container {
+  position: relative;  
+}
+
+.card__image-label {
+  color: var(--font-color);
+  opacity: 50%;
+  text-shadow: 
+          -1px 0 var(--card-background-color),
+          0 1px var(--card-background-color),
+          1px 0 var(--card-background-color),
+          0 -1px var(--card-background-color);
+  font-family: var(--font-accent);
+  font-size: 14px;
+  text-transform: uppercase;
+  mix-blend-mode: hard-light;
+  position: absolute;
+  inset-inline-end: 25px;
+  inset-block-start: 25px;
+}
+
+@supports((text-stroke: 1px var(--card-background-color)) or (-webkit-text-stroke: 1px var(--card-background-color))) {
+ .card__image-label {
+    -webkit-text-stroke: 1px var(--card-background-color);
+    text-stroke: 1px var(--card-background-color);
+    text-shadow: none;
+  }
+}
+
 .card__image {
   object-fit: cover;
   inline-size: 100%;
