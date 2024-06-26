@@ -1,6 +1,8 @@
 .button {
     position: relative;
     background-color: var(--card-background-color);
+    box-shadow: none;
+    border: solid 2px var(--accent-color);
 }
 
 .button__text {
@@ -10,21 +12,15 @@
     position: relative;
 }
 
-.accent-font {
-    font-family: var(--font-accent);
-    font-weight: 400;
-    font-size: 14px;
-}
-
-.shadowed:focus {
+.button:focus {
     outline: none;
-    box-shadow: 2px 2px var(--font-color);
+    box-shadow: 2px 2px var(--accent-color);
     animation: theme-menu__button-focusVisible 0.3s ease;
 }
 
-.shadowed::after {
+.button::after {
     content: ""; 
-    background-color: var(--font-color);
+    background-color: var(--accent-color);
     position: absolute;
     top: 0;
     left: 0;
@@ -35,7 +31,7 @@
     transform-origin: left;
 }
 
-.shadowed:hover::after {
+.button:hover::after {
     cursor: pointer;
     transform: scaleX(1);
 }
@@ -45,7 +41,10 @@
     text-transform: uppercase;
     position: relative;
     outline: none;
+    box-shadow: none;
+    background-color: transparent;
     border: none;
+    color: var(--accent-color);
 }
 
 .theme-menu__button:hover {
@@ -76,7 +75,7 @@
     position: absolute;
     bottom: -3px;
     left: 0;
-    border-bottom: 2px solid var(--font-color);
+    border-bottom: 2px solid var(--accent-color);
     width: 100%;
     transform-origin: left;
     animation: theme-menu__button-focusVisible 0.3s ease;
@@ -90,8 +89,25 @@
 .card__icon-button {
     padding: 0;
     border: none;
+    inline-size: 39px;
+    block-size: 39px;
     background-color: transparent;
     box-shadow: none;
+    outline: 2px solid transparent;
+    transition: outline-color 0.3s ease;
+}
+
+.card__icon-button:focus-visible {
+    outline-color: var(--accent-color);
+}
+
+.card__icon-button:focus {
+    outline: none;
+}
+
+.main-body {
+    fill: transparent;
+    transition: fill 0.3s linear;
 }
 
 .like-icon {
@@ -99,9 +115,36 @@
     block-size: 36px;
 }
 
+.sparks {
+    fill: transparent;
+}
+
+.like-icon:hover .core {
+    fill: var(--accent-color);
+    cursor: pointer;
+    transition-delay: 0s;
+}
+
+.like-icon:hover .main-body {
+    fill: var(--accent-color);
+    cursor: pointer;
+    transition-delay: 0.05s;
+}
+
+.like-icon:active .core {
+    fill: var(--heart-fill-color);
+    cursor: pointer;
+    transition-delay: 0s;
+}
+
+.like-icon:active .main-body {
+    fill: var(--heart-fill-color);
+    cursor: pointer;
+    transition-delay: 0.05s;
+}
+
 .card__like-button {
-    background-color: transparent;
-    padding: 9px 31px;
+    padding: 12px 37px;
 }
 
 .footer__button {
