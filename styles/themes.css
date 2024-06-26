@@ -6,16 +6,19 @@
 */
 :root.theme-light {
     --bg-image:
-            repeating-linear-gradient(#d3d3d3, #d3d3d3 2px, transparent  2px, transparent  4px),
-            repeating-linear-gradient(90deg, #d3d3d3, #d3d3d3 2px, transparent  2px, transparent  4px),
+            repeating-linear-gradient(#d3d3d3 0, #d3d3d3 2px, transparent  2px, transparent  4px),
+            repeating-linear-gradient(90deg, #d3d3d3 0, #d3d3d3 2px, transparent  2px, transparent  4px),
             linear-gradient(#e7e7e7, #e7e7e7 0.01%, #1a1a1a);
     --bg-color: #b7b7b7;
     --font-regular: 'Inter';
     --font-accent: 'PressStart2P';
     --font-weight-normal: 400;
     --font-weight-bold: 700;
-    --font-color: #000000;
+    --accent-color: #000000;
     --card-background-color: #ffffff;
+    --heart-main-body-color: transparent;
+    --heart-core-color: transparent;
+    --heart-sparks-color: transparent;
 }
 
 :root.theme-dark {
@@ -28,21 +31,27 @@
     --font-accent: 'PressStart2P';
     --font-weight-normal: 465;
     --font-weight-bold: 785;
-    --font-color: #00CC14;
+    --accent-color: #00CC14;
     --card-background-color: #000000;
+    --heart-main-body-color: transparent;
+    --heart-core-color: transparent;
+    --heart-sparks-color: transparent;
 }
 
 @media (prefers-color-scheme: light) {
     --bg-image:
-            repeating-linear-gradient(#d3d3d3, #d3d3d3 2px, transparent  2px, transparent  4px),
-            repeating-linear-gradient(90deg, #d3d3d3, #d3d3d3 2px, transparent  2px, transparent  4px),
+            repeating-linear-gradient(#d3d3d3 0, #d3d3d3 2px, transparent  2px, transparent  4px),
+            repeating-linear-gradient(90deg, #d3d3d3 0, #d3d3d3 2px, transparent  2px, transparent  4px),
             linear-gradient(#e7e7e7, #e7e7e7 0.01%, #1a1a1a);
     --bg-color: #b7b7b7;
     --font-regular: 'Inter';
     --font-accent: 'PressStart2P';
     --font-weight-normal: 400;
     --font-weight-bold: 700;
-    --font-color: #000000;
+    --accent-color: #000000;
     --card-background-color: #ffffff;
+    --heart-main-body-color: transparent;
+    --heart-core-color: transparent;
+    --heart-sparks-color: transparent;
 }
 

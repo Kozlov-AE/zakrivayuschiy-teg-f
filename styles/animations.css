@@ -36,10 +36,10 @@
 
 @keyframes theme-menu__button-focusVisible {
     from {
-        box-shadow: 0 0 0
+        box-shadow: 0 0
     }
     to {
-        
+        box-shadow: 2px 2px;
     }
 }
 
