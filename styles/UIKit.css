@@ -6,7 +6,9 @@
 }
 
 .button__text {
-    color: var(--card-background-color);
+    font-family: var(--font-accent);
+    font-size: 14px;
+    color: var(--button-font-color);
     mix-blend-mode: difference;
     z-index: 1;
     position: relative;
@@ -183,8 +185,8 @@
 }
 
 .floppy {
-    block-size: 21px;
-    inline-size: 21px;
+    width: 21px;
+    height: 21px;
     fill: var(--card-background-color);
     mix-blend-mode: difference;
     position: relative;

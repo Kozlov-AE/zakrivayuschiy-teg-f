@@ -144,19 +144,36 @@
 
 .dialog {
   padding: 30px;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+  inline-size: clamp(341px, 90%, 353px);
+  block-size: 191px;
+  box-sizing: border-box;
+  border: 2px solid var(--accent-color);
+  background-color: var(--card-background-color);
+  color: var(--accent-color);
+}
+
+.dialog__description {
   text-transform: uppercase;
   font-family: var(--font-accent);
   font-weight: 400;
   font-size: 14px;
-  inline-size: clamp(341px, 90%, 353px);
-  width: 357px;
-  height: 193px;
-  border: 2px solid var(--accent-color);
-  background-color: var(--card-background-color);
-  color: var(--accent-color);
+  line-height: 21px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  margin-block-end: 30px;
+}
+
+.dialog__description .floppy {
+  width: 39px;
+  height: 39px;
+  fill: var(--accent-color);
+}
+
+.dialog__button {
+  width: 100%;
+  padding-block: 1.1em;
 }
 
 dialog::backdrop {
