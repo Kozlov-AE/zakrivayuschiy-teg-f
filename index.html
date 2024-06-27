@@ -81,7 +81,9 @@
       </ul>
     </main>
     <footer class="block footer">
-      <button class="button accent-font shadowed footer__button">
+      <button class="button accent-font shadowed footer__button"
+              onclick="window['dialog-id'].showModal()"
+              aria-controls="dialog-id">
         <svg viewBox="0 0 21 21" class="floppy">
           <use href="./svg/floppy.svg#floppy"></use>
         </svg>
@@ -90,6 +92,20 @@
         </span>
       </button>
     </footer>
+    <dialog id="dialog-id" class="dialog" aria-controls="dialog-ad">
+      <div class="dialog__description">
+        <svg viewBox="0 0 21 21" class="floppy">
+          <use href="./svg/floppy.svg#floppy"></use>
+        </svg>
+        <p class="dialog__description-text">
+          Вставьте дискету, чтобы продолжить
+        </p>
+      </div>
+      <button class="dialog__button" type="button"
+              onclick="window['dialog-id'].close()">
+        Ok
+      </button>
+    </dialog>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
