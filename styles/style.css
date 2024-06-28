@@ -152,7 +152,7 @@
 .dialog {
   padding: 30px;
   inline-size: clamp(341px, 90%, 353px);
-  block-size: 191px;
+  block-size: 194px;
   box-sizing: border-box;
   border: 2px solid var(--accent-color);
   background-color: var(--card-background-color);
@@ -180,7 +180,7 @@
 
 .dialog__button {
   width: 100%;
-  padding-block: 1.1em;
+  padding-block: 0.6em;
 }
 
 dialog::backdrop {
