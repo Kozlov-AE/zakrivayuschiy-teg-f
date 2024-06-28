@@ -83,11 +83,6 @@
     animation: theme-menu__button-focusVisible 0.3s ease;
 }
 
-.card__buttons {
-    display: flex;
-    justify-content: center;
-}
-
 .card__icon-button {
     padding: 0;
     border: none;
@@ -173,7 +168,7 @@
 }
 
 .card__like-button {
-    padding: 12px 37px;
+    padding: 8px 35px;
 }
 
 .footer__button {

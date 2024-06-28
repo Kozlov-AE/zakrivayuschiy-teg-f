@@ -45,7 +45,7 @@
   justify-content: flex-end;
   block-size: clamp(327px, 100vh, 368px);
   margin-block: 100px;
-  padding-block-end: 25px;
+  padding-block-end: 23px;
   background-color: var(--card-background-color);
 }
 
@@ -68,7 +68,8 @@
 .theme-menu__list {
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: 10px;
+  margin-inline-start: 19px;
 }
 
 .card__item {
@@ -82,10 +83,13 @@
   font-size: 18px;
   font-weight: var(--font-weight-bold);
   padding: 3px 24px 3px 10px;
+  line-height: 26px;
+  letter-spacing: 0.01rem;
 }
 
 .card__image-container {
   position: relative;  
+  max-block-size: 700px;
 }
 
 .card__image-label {
@@ -117,6 +121,7 @@
   object-fit: cover;
   inline-size: 100%;
   block-size: 100%;
+  border-block: 2px solid var(--accent-color);
 }
 
 .card__bottom-zone {
@@ -130,12 +135,14 @@
   display: flex;
   flex-direction: column;
   gap: 27px;
+  letter-spacing: 0.04rem;
 }
 
 .card__buttons {
+  display: flex;
   align-self: end;
-  justify-content: center;
   align-items: center;
+  gap: 6px;
 }
 
 .footer {
@@ -168,7 +175,7 @@
 .dialog__description .floppy {
   width: 39px;
   height: 39px;
-  fill: var(--accent-color);
+  fill: var(--button-font-color);
 }
 
 .dialog__button {

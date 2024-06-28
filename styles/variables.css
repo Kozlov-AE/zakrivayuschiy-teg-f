@@ -8,9 +8,9 @@
     --font-accent: 'PressStart2P';
     --font-weight-normal: 400;
     --font-weight-bold: 700;
-    --button-font-color: #000000;
-    --accent-color: #000000;
-    --card-background-color: #ffffff;
+    --button-font-color: #fff;
+    --accent-color: #000;
+    --card-background-color: #fff;
     --heart-fill-color: red;
     --heart-stroke-color: #000;
 }
