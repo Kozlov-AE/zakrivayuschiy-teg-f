@@ -79,6 +79,10 @@
   border: 2px solid var(--accent-color);
 }
 
+.card__item:not(:last-child) {
+  margin-block-end: 50px;
+}
+
 .card__title {
   font-size: 18px;
   font-weight: var(--font-weight-bold);
