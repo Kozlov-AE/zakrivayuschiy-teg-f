@@ -11,6 +11,7 @@
 body {
   margin: 0;
   color: var(--accent-color);
+  font-size: 14px;
 }
 
 h1,
