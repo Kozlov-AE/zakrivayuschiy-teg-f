@@ -1,29 +1,35 @@
-@media (max-width:400px) {
+@media (max-width: 400px) {
     .header {
         block-size: 327px;
     }
+
     .card__item:not(:last-child) {
         margin-block-end: 51px;
     }
-    
+
     .card__title {
         line-height: 24px;
     }
-    
+
     .card__image-container {
         max-block-size: 374px;
     }
-    
+
     .card-description {
         letter-spacing: 0.05rem;
     }
-    
+
     .footer__button {
         flex-direction: column;
     }
-    
+
     .floppy {
         width: 28px;
         height: 28px;
+    }
+
+    .dialog {
+        padding-inline: 42px;
+        word-spacing: -0.15em;
     }
 }

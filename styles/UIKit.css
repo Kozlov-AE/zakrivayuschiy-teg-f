@@ -21,7 +21,7 @@
 }
 
 .button::after {
-    content: ""; 
+    content: "";
     background-color: var(--accent-color);
     position: absolute;
     top: 0;
@@ -63,7 +63,7 @@
 }
 
 .theme-menu__button:disabled::before {
-    content: "▶"; 
+    content: "▶";
     position: absolute;
     inset-inline-start: -1.5em;
     font-family: var(--font-accent);
@@ -73,7 +73,7 @@
 }
 
 .theme-menu__button:focus-visible::after {
-    content:"";
+    content: "";
     position: absolute;
     bottom: -3px;
     left: 0;
@@ -182,7 +182,7 @@
 .floppy {
     width: 21px;
     height: 21px;
-    fill: var(--card-background-color);
+    fill: var(--button-font-color);
     mix-blend-mode: difference;
     position: relative;
     z-index: 1;
