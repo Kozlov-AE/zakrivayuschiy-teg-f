@@ -14,14 +14,16 @@
 
 */
 .accent-font {
-    font-family: var(--font-accent);
+    font-family: var(--font-accent), sans-serif;
     font-weight: 400;
     font-size: 14px;
 }
 
 .page {
-    min-inline-size: 320px;
+    inline-size: clamp(320px, 100%, 700px);
     min-block-size: 100dvb;
+    margin-inline: auto;
+    padding-block-end: 50px;
     background-image: var(--bg-image);
     background-repeat: repeat;
     background-color: var(--bg-color);
@@ -31,11 +33,6 @@
     font-variation-settings: 'wght' var(--font-weight-normal);
     color: var(--accent-color);
     inset-inline: auto;
-}
-
-.block {
-    inline-size: clamp(375px, 100%, 700px);
-    margin-inline: auto;
 }
 
 .header {
@@ -51,17 +48,15 @@
 }
 
 
-.header__title {
+.logo {
     text-transform: uppercase;
-    font-family: var(--font-accent);
     font-weight: 400;
     font-size: clamp(49px, 1.9087rem + 4.9231vw, 65px);
     margin-block-end: 20px;
 }
 
-.header__subtitle {
+.header__title {
     text-transform: uppercase;
-    font-family: var(--font-accent);
     font-weight: 400;
     font-size: clamp(14px, 0.774em + 0.845vi, 23px);
     margin-block-end: 25px;
@@ -72,6 +67,10 @@
     flex-direction: column;
     gap: 10px;
     margin-inline-start: 19px;
+}
+
+.cards-section {
+    margin-block-end: 50px;
 }
 
 .card__item {
@@ -87,7 +86,7 @@
 
 .card__title {
     font-size: 18px;
-    font-weight: var(--font-weight-bold);
+    font-variation-settings: 'wght' var(--font-weight-bold);
     padding: 3px 24px 3px 10px;
     line-height: 26px;
     letter-spacing: 0.01rem;
@@ -105,8 +104,6 @@
     0 1px var(--card-background-color),
     1px 0 var(--card-background-color),
     0 -1px var(--card-background-color);
-    font-family: var(--font-accent);
-    font-size: 14px;
     text-transform: uppercase;
     mix-blend-mode: hard-light;
     position: absolute;
@@ -183,10 +180,6 @@
     gap: 6px;
 }
 
-.footer {
-    padding-block: 50px;
-}
-
 .dialog {
     padding: 30px;
     inline-size: clamp(341px, 90%, 353px);
@@ -199,9 +192,6 @@
 
 .dialog__description {
     text-transform: uppercase;
-    font-family: var(--font-accent);
-    font-weight: 400;
-    font-size: 14px;
     line-height: 21px;
     display: flex;
     flex-direction: row;
@@ -219,8 +209,45 @@
 .dialog__button {
     width: 100%;
     padding-block: 0.6em;
+    text-transform: uppercase;
 }
 
 dialog::backdrop {
     background-color: rgb(0 0 0 / 0.75);
+}
+
+@media (max-width: 400px) {
+    .header {
+        block-size: 327px;
+    }
+
+    .card__item:not(:last-child) {
+        margin-block-end: 51px;
+    }
+
+    .card__title {
+        line-height: 24px;
+    }
+
+    .card__image-container {
+        max-block-size: 374px;
+    }
+
+    .card-description {
+        letter-spacing: 0.05rem;
+    }
+
+    .footer__button {
+        flex-direction: column;
+    }
+
+    .floppy {
+        width: 28px;
+        height: 28px;
+    }
+
+    .dialog {
+        padding-inline: 42px;
+        word-spacing: -0.15em;
+    }
 }
