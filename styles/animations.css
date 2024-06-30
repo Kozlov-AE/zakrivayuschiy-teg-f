@@ -23,7 +23,7 @@ sparks — искры вокруг.
         transform: scaleX(0);
     }
     to {
-        transform: scaleX(1);   
+        transform: scaleX(1);
     }
 }
 
@@ -53,7 +53,7 @@ sparks — искры вокруг.
         transform: scaleX(1);
     }
 }
-    
+
 @keyframes heart-scale {
     from {
         transform: scale(1);
@@ -65,8 +65,8 @@ sparks — искры вокруг.
 
 @keyframes sparks-flash {
     from {
-        fill: transparent;   
-    } 
+        fill: transparent;
+    }
     to {
         fill: var(--heart-fill-color);
     }
