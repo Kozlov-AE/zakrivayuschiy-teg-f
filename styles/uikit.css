@@ -16,6 +16,11 @@
 
 .button:focus {
     outline: none;
+    box-shadow: none;
+}
+
+.button:focus-visible {
+    outline: none;
     box-shadow: 2px 2px var(--accent-color);
     animation: theme-menu__button-focusVisible 0.3s ease;
 }

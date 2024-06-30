@@ -53,6 +53,11 @@
     font-weight: 400;
     font-size: clamp(49px, 1.9087rem + 4.9231vw, 65px);
     margin-block-end: 20px;
+    text-decoration: none;
+}
+
+.logo:focus {
+    outline: none;
 }
 
 .header__title {
@@ -178,6 +183,12 @@
     align-self: end;
     align-items: center;
     gap: 6px;
+}
+
+.card__like-button {
+    width: 130px;
+    height: 38px;
+    padding: 0;
 }
 
 .dialog {
